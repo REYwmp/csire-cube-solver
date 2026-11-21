@@ -5,7 +5,8 @@ import json
 from pathlib import Path
 
 from cube import SOLVED, apply_moves, parse_moves, random_scramble, read_state
-from solver import solve
+from facelets import read_faces
+from solver import final_moves, solve
 
 
 def main():
@@ -18,6 +19,8 @@ def main():
     random.add_argument("--seed", type=int)
     by_state = commands.add_parser("solve-state", help="solve a cubie-state JSON file")
     by_state.add_argument("file", type=Path)
+    by_faces = commands.add_parser("solve-faces", help="solve six faces of sticker labels in U R F D L B order")
+    by_faces.add_argument("faces", help="54 center-based sticker labels, optionally separated by spaces")
     export = commands.add_parser("state", help="print a scramble as cubie-state JSON")
     export.add_argument("moves")
     args = parser.parse_args()
@@ -25,6 +28,8 @@ def main():
     try:
         if args.command == "solve-state":
             state = read_state(json.loads(args.file.read_text(encoding="utf-8-sig")))
+        elif args.command == "solve-faces":
+            state = read_faces(args.faces)
         else:
             if args.command == "random":
                 scramble = random_scramble(args.length, args.seed)
@@ -41,8 +46,9 @@ def main():
     phases = solve(state)
     for name, path in phases:
         print(f"{name}: {' '.join(path) or '(already satisfied)'}")
-    solution = [move for _, path in phases for move in path]
-    print(f"Solution ({len(solution)} moves):", " ".join(solution) or "(already solved)")
+    solution = final_moves(state, phases)
+    unit = "move" if len(solution) == 1 else "moves"
+    print(f"Solution ({len(solution)} {unit}):", " ".join(solution) or "(already solved)")
     print("Replay: solved")
 
 

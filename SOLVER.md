@@ -50,6 +50,24 @@ Algorithm background: [Jaap Scherphuis, *Computer Puzzling*, section on Thistlet
 
 ## Solve a cube without its scramble history
 
+### Read a physical cube
+
+Pick a front face and an upper face. Label each sticker by the **face whose center matches its color**. For example, every sticker matching the right center is R. Read each face left to right, top to bottom, as if looking straight at it. When reading F, R, B and L, keep the upper center at the top. When reading U, put the back edge at the top. When reading D, put the front edge at the top.
+
+The unfolded map shows a cube after the scramble `F R U2`. Its front face reads `LBB` across the top, `FFD` across the middle and `FFD` across the bottom. The letters also let you follow the example in grayscale.
+
+![Unfolded map of six labeled faces after F R U2](examples/sticker-map.svg)
+
+Enter the six groups in **U R F D L B** order, even though the map arranges adjacent faces together. This example gives the solver only the stickers visible on the cube.
+
+```sh
+python solve_cube.py solve-faces "FLLFUUFUU LLDRRRRRR LBBFFDFFD RRBDDBDDB UUULLDLLD FFRUBBUBB"
+```
+
+The solution is `U2 R' F'`. On a physical cube, turn the upper face twice, then turn the right face and the front face counterclockwise once each, viewing each turn from outside that face. The same state is available in the JSON example below.
+
+### Read a cubie-state file
+
 ```sh
 python solve_cube.py solve-state examples/cube-state.json
 ```
@@ -67,6 +85,8 @@ The importer checks that each piece appears once, corner twists sum to zero modu
 
 ## Verification
 
+The CLI shows the moves found in each phase, then combines adjacent turns of the same face in the final instructions and replays them from the input. For a one-turn `R` scramble, the phase trace contains `R` and then `R2`. The final instruction is `R'`. This simplification preserves the solution and can still leave a longer sequence than a globally shortest path.
+
 ```sh
 python -m unittest -v
 ```
@@ -74,3 +94,24 @@ python -m unittest -v
 The tests compare the cubie moves against an independent 3D sticker-rotation model. They replay solutions for seeded scrambles, check that each phase preserves prior conditions, exercise the all-edges-flipped “superflip,” and run the JSON interface on a state file. They also test impossible states and empty solutions.
 
 The implementation is split into [cube.py](cube.py) for the physical model and input validation, [solver.py](solver.py) for the search, [solve_cube.py](solve_cube.py) for the command line, and [test_cube.py](test_cube.py) for verification.
+
+### The 100-state experiment
+
+Run the experiment from the repository root with Python 3.9 or later. The published run used Python 3.13 and random seed 1701.
+
+```sh
+python experiment.py
+```
+
+The script samples corner and edge permutations, matches their parity, and samples orientations with the legal twist and flip sums. Each trial gives the solver only that state. It checks both the raw phase path and the final instructions by replaying them from the same input. [Experiment source](experiment.py)
+
+| Stage | Minimum moves | Median moves | Maximum moves |
+| --- | ---: | ---: | ---: |
+| 1. Orient edges | 3 | 5 | 6 |
+| 2. Orient corners and place middle-slice edges | 5 | 8 | 9 |
+| 3. Enter the half-turn subgroup | 5 | 9 | 12 |
+| 4. Solve with half turns | 7 | 10 | 14 |
+| Raw total per cube | 27 | 31 | 37 |
+| Final instructions per cube | 26 | 31 | 37 |
+
+All 100 cubes returned to the solved state. The half-turn phase had the highest median move count (10). Combining adjacent turns shortened 44 of the 100 solutions, and the sample median stayed at 31 moves. Every quarter turn or half turn counts as one move. The stage counts describe the search trace before simplification. Each total is computed per cube before summarizing across trials.

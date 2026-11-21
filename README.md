@@ -2,7 +2,7 @@
 
 *Mingpu (Andy) Wu*
 
-If someone hands me a scrambled Rubik’s Cube, I can see where every piece ended up, but I have no record of the turns that put it there. Can a program find its way back using only what I can see? In high school, I explored that question with Alyna Tang through the CSIRE program at Stony Brook University, under the mentorship of Professor David Gu. Alyna’s part of our final presentation explained how sequences of turns could reposition selected pieces. My part focused on turning that mathematics into code.
+If someone hands me a scrambled Rubik’s Cube, I can see where every piece ended up, but I have no record of the turns that put it there. Can a program find its way back using only what I can see? In high school, I explored that question with Alyna Tang through the CSIRE program at Stony Brook University, under the mentorship of Professor David Gu. Alyna explained how sequences of turns could reposition selected pieces. I modeled the cube, defined how each face turn moves its pieces, and described how a breadth-first search could record a path back to the solved state. My *Code Realization* slides show that work on pages 2–4 of our [final presentation](originals/CSIRE-final-poster.pptx).
 
 The first decision was how to describe the cube. A corner can sit in its correct slot with its three colors facing the wrong directions. Recording its location alone would lose exactly the information a solver needs to finish the puzzle. The model therefore tracks both the position and orientation of eight corners and twelve edges. Each face turn rearranges those pieces according to a fixed rule. Once a turn can be expressed that way, the program can apply it, undo it, or combine it with another. That was where group theory became tangible for me. The same operation I could perform with my hands could also be a rule the computer could search over.
 
@@ -13,5 +13,7 @@ One test returns to the question that started the project. The renewed solver re
 ## Project materials
 
 - [Run the solver and explore the implementation](SOLVER.md)
+- [Try a physical cube using the illustrated sticker example](SOLVER.md#read-a-physical-cube)
+- [Reproduce the 100-state experiment and see the move counts](SOLVER.md#the-100-state-experiment)
 - [Original CSIRE midterm presentation](originals/CSIRE-midterm.pptx)
 - [Original CSIRE final poster and implementation slides](originals/CSIRE-final-poster.pptx)

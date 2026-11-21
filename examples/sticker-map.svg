@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="546" height="416" viewBox="0 0 546 416" role="img" aria-labelledby="title desc">
+<title id="title">Sticker map after F R U2</title>
+<desc id="desc">Unfolded cube with U above F, L F R B across the middle, and D below F. Letters identify colors by their solved face centers.</desc>
+<rect width="546" height="416" rx="10" fill="#f4f5f6"/>
+<text x="203" y="24" text-anchor="middle" fill="#182432" font-family="sans-serif" font-size="14" font-weight="bold">U face</text>
+<rect x="146" y="29" width="37" height="35" rx="3" fill="#31876c" stroke="#243140"/>
+<text x="164.5" y="52" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="16">F</text>
+<rect x="184" y="29" width="37" height="35" rx="3" fill="#ed9459" stroke="#243140"/>
+<text x="202.5" y="52" text-anchor="middle" fill="#182432" font-family="sans-serif" font-weight="bold" font-size="16">L</text>
+<rect x="222" y="29" width="37" height="35" rx="3" fill="#ed9459" stroke="#243140"/>
+<text x="240.5" y="52" text-anchor="middle" fill="#182432" font-family="sans-serif" font-weight="bold" font-size="16">L</text>
+<rect x="146" y="65" width="37" height="35" rx="3" fill="#31876c" stroke="#243140"/>
+<text x="164.5" y="88" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="16">F</text>
+<rect x="184" y="65" width="37" height="35" rx="3" fill="#f6f4eb" stroke="#243140"/>
+<text x="202.5" y="88" text-anchor="middle" fill="#182432" font-family="sans-serif" font-weight="bold" font-size="16">U</text>
+<rect x="222" y="65" width="37" height="35" rx="3" fill="#f6f4eb" stroke="#243140"/>
+<text x="240.5" y="88" text-anchor="middle" fill="#182432" font-family="sans-serif" font-weight="bold" font-size="16">U</text>
+<rect x="146" y="101" width="37" height="35" rx="3" fill="#31876c" stroke="#243140"/>
+<text x="164.5" y="124" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="16">F</text>
+<rect x="184" y="101" width="37" height="35" rx="3" fill="#f6f4eb" stroke="#243140"/>
+<text x="202.5" y="124" text-anchor="middle" fill="#182432" font-family="sans-serif" font-weight="bold" font-size="16">U</text>
+<rect x="222" y="101" width="37" height="35" rx="3" fill="#f6f4eb" stroke="#243140"/>
+<text x="240.5" y="124" text-anchor="middle" fill="#182432" font-family="sans-serif" font-weight="bold" font-size="16">U</text>
+<text x="335" y="160" text-anchor="middle" fill="#182432" font-family="sans-serif" font-size="14" font-weight="bold">R face</text>
+<rect x="278" y="165" width="37" height="35" rx="3" fill="#ed9459" stroke="#243140"/>
+<text x="296.5" y="188" text-anchor="middle" fill="#182432" font-family="sans-serif" font-weight="bold" font-size="16">L</text>
+<rect x="316" y="165" width="37" height="35" rx="3" fill="#ed9459" stroke="#243140"/>
+<text x="334.5" y="188" text-anchor="middle" fill="#182432" font-family="sans-serif" font-weight="bold" font-size="16">L</text>
+<rect x="354" y="165" width="37" height="35" rx="3" fill="#f3cf55" stroke="#243140"/>
+<text x="372.5" y="188" text-anchor="middle" fill="#182432" font-family="sans-serif" font-weight="bold" font-size="16">D</text>
+<rect x="278" y="201" width="37" height="35" rx="3" fill="#c44841" stroke="#243140"/>
+<text x="296.5" y="224" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="16">R</text>
+<rect x="316" y="201" width="37" height="35" rx="3" fill="#c44841" stroke="#243140"/>
+<text x="334.5" y="224" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="16">R</text>
+<rect x="354" y="201" width="37" height="35" rx="3" fill="#c44841" stroke="#243140"/>
+<text x="372.5" y="224" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="16">R</text>
+<rect x="278" y="237" width="37" height="35" rx="3" fill="#c44841" stroke="#243140"/>
+<text x="296.5" y="260" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="16">R</text>
+<rect x="316" y="237" width="37" height="35" rx="3" fill="#c44841" stroke="#243140"/>
+<text x="334.5" y="260" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="16">R</text>
+<rect x="354" y="237" width="37" height="35" rx="3" fill="#c44841" stroke="#243140"/>
+<text x="372.5" y="260" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="16">R</text>
+<text x="203" y="160" text-anchor="middle" fill="#182432" font-family="sans-serif" font-size="14" font-weight="bold">F face</text>
+<rect x="146" y="165" width="37" height="35" rx="3" fill="#ed9459" stroke="#243140"/>
+<text x="164.5" y="188" text-anchor="middle" fill="#182432" font-family="sans-serif" font-weight="bold" font-size="16">L</text>
+<rect x="184" y="165" width="37" height="35" rx="3" fill="#426bb1" stroke="#243140"/>
+<text x="202.5" y="188" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="16">B</text>
+<rect x="222" y="165" width="37" height="35" rx="3" fill="#426bb1" stroke="#243140"/>
+<text x="240.5" y="188" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="16">B</text>
+<rect x="146" y="201" width="37" height="35" rx="3" fill="#31876c" stroke="#243140"/>
+<text x="164.5" y="224" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="16">F</text>
+<rect x="184" y="201" width="37" height="35" rx="3" fill="#31876c" stroke="#243140"/>
+<text x="202.5" y="224" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="16">F</text>
+<rect x="222" y="201" width="37" height="35" rx="3" fill="#f3cf55" stroke="#243140"/>
+<text x="240.5" y="224" text-anchor="middle" fill="#182432" font-family="sans-serif" font-weight="bold" font-size="16">D</text>
+<rect x="146" y="237" width="37" height="35" rx="3" fill="#31876c" stroke="#243140"/>
+<text x="164.5" y="260" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="16">F</text>
+<rect x="184" y="237" width="37" height="35" rx="3" fill="#31876c" stroke="#243140"/>
+<text x="202.5" y="260" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="16">F</text>
+<rect x="222" y="237" width="37" height="35" rx="3" fill="#f3cf55" stroke="#243140"/>
+<text x="240.5" y="260" text-anchor="middle" fill="#182432" font-family="sans-serif" font-weight="bold" font-size="16">D</text>
+<text x="203" y="296" text-anchor="middle" fill="#182432" font-family="sans-serif" font-size="14" font-weight="bold">D face</text>
+<rect x="146" y="301" width="37" height="35" rx="3" fill="#c44841" stroke="#243140"/>
+<text x="164.5" y="324" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="16">R</text>
+<rect x="184" y="301" width="37" height="35" rx="3" fill="#c44841" stroke="#243140"/>
+<text x="202.5" y="324" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="16">R</text>
+<rect x="222" y="301" width="37" height="35" rx="3" fill="#426bb1" stroke="#243140"/>
+<text x="240.5" y="324" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="16">B</text>
+<rect x="146" y="337" width="37" height="35" rx="3" fill="#f3cf55" stroke="#243140"/>
+<text x="164.5" y="360" text-anchor="middle" fill="#182432" font-family="sans-serif" font-weight="bold" font-size="16">D</text>
+<rect x="184" y="337" width="37" height="35" rx="3" fill="#f3cf55" stroke="#243140"/>
+<text x="202.5" y="360" text-anchor="middle" fill="#182432" font-family="sans-serif" font-weight="bold" font-size="16">D</text>
+<rect x="222" y="337" width="37" height="35" rx="3" fill="#426bb1" stroke="#243140"/>
+<text x="240.5" y="360" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="16">B</text>
+<rect x="146" y="373" width="37" height="35" rx="3" fill="#f3cf55" stroke="#243140"/>
+<text x="164.5" y="396" text-anchor="middle" fill="#182432" font-family="sans-serif" font-weight="bold" font-size="16">D</text>
+<rect x="184" y="373" width="37" height="35" rx="3" fill="#f3cf55" stroke="#243140"/>
+<text x="202.5" y="396" text-anchor="middle" fill="#182432" font-family="sans-serif" font-weight="bold" font-size="16">D</text>
+<rect x="222" y="373" width="37" height="35" rx="3" fill="#426bb1" stroke="#243140"/>
+<text x="240.5" y="396" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="16">B</text>
+<text x="71" y="160" text-anchor="middle" fill="#182432" font-family="sans-serif" font-size="14" font-weight="bold">L face</text>
+<rect x="14" y="165" width="37" height="35" rx="3" fill="#f6f4eb" stroke="#243140"/>
+<text x="32.5" y="188" text-anchor="middle" fill="#182432" font-family="sans-serif" font-weight="bold" font-size="16">U</text>
+<rect x="52" y="165" width="37" height="35" rx="3" fill="#f6f4eb" stroke="#243140"/>
+<text x="70.5" y="188" text-anchor="middle" fill="#182432" font-family="sans-serif" font-weight="bold" font-size="16">U</text>
+<rect x="90" y="165" width="37" height="35" rx="3" fill="#f6f4eb" stroke="#243140"/>
+<text x="108.5" y="188" text-anchor="middle" fill="#182432" font-family="sans-serif" font-weight="bold" font-size="16">U</text>
+<rect x="14" y="201" width="37" height="35" rx="3" fill="#ed9459" stroke="#243140"/>
+<text x="32.5" y="224" text-anchor="middle" fill="#182432" font-family="sans-serif" font-weight="bold" font-size="16">L</text>
+<rect x="52" y="201" width="37" height="35" rx="3" fill="#ed9459" stroke="#243140"/>
+<text x="70.5" y="224" text-anchor="middle" fill="#182432" font-family="sans-serif" font-weight="bold" font-size="16">L</text>
+<rect x="90" y="201" width="37" height="35" rx="3" fill="#f3cf55" stroke="#243140"/>
+<text x="108.5" y="224" text-anchor="middle" fill="#182432" font-family="sans-serif" font-weight="bold" font-size="16">D</text>
+<rect x="14" y="237" width="37" height="35" rx="3" fill="#ed9459" stroke="#243140"/>
+<text x="32.5" y="260" text-anchor="middle" fill="#182432" font-family="sans-serif" font-weight="bold" font-size="16">L</text>
+<rect x="52" y="237" width="37" height="35" rx="3" fill="#ed9459" stroke="#243140"/>
+<text x="70.5" y="260" text-anchor="middle" fill="#182432" font-family="sans-serif" font-weight="bold" font-size="16">L</text>
+<rect x="90" y="237" width="37" height="35" rx="3" fill="#f3cf55" stroke="#243140"/>
+<text x="108.5" y="260" text-anchor="middle" fill="#182432" font-family="sans-serif" font-weight="bold" font-size="16">D</text>
+<text x="467" y="160" text-anchor="middle" fill="#182432" font-family="sans-serif" font-size="14" font-weight="bold">B face</text>
+<rect x="410" y="165" width="37" height="35" rx="3" fill="#31876c" stroke="#243140"/>
+<text x="428.5" y="188" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="16">F</text>
+<rect x="448" y="165" width="37" height="35" rx="3" fill="#31876c" stroke="#243140"/>
+<text x="466.5" y="188" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="16">F</text>
+<rect x="486" y="165" width="37" height="35" rx="3" fill="#c44841" stroke="#243140"/>
+<text x="504.5" y="188" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="16">R</text>
+<rect x="410" y="201" width="37" height="35" rx="3" fill="#f6f4eb" stroke="#243140"/>
+<text x="428.5" y="224" text-anchor="middle" fill="#182432" font-family="sans-serif" font-weight="bold" font-size="16">U</text>
+<rect x="448" y="201" width="37" height="35" rx="3" fill="#426bb1" stroke="#243140"/>
+<text x="466.5" y="224" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="16">B</text>
+<rect x="486" y="201" width="37" height="35" rx="3" fill="#426bb1" stroke="#243140"/>
+<text x="504.5" y="224" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="16">B</text>
+<rect x="410" y="237" width="37" height="35" rx="3" fill="#f6f4eb" stroke="#243140"/>
+<text x="428.5" y="260" text-anchor="middle" fill="#182432" font-family="sans-serif" font-weight="bold" font-size="16">U</text>
+<rect x="448" y="237" width="37" height="35" rx="3" fill="#426bb1" stroke="#243140"/>
+<text x="466.5" y="260" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="16">B</text>
+<rect x="486" y="237" width="37" height="35" rx="3" fill="#426bb1" stroke="#243140"/>
+<text x="504.5" y="260" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="16">B</text>
+</svg>

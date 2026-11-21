@@ -99,3 +99,21 @@ def solve(state):
             raise RuntimeError(f"Replay failed during phase: {name}")
         phases.append((name, path))
     return phases
+
+
+def final_moves(state, phases):
+    """Combine adjacent turns of one face and replay the result from the input."""
+    suffix = {1: "", 2: "2", 3: "'"}
+    amount = {"": 1, "2": 2, "'": 3}
+    turns = []
+    for _, path in phases:
+        for move in path:
+            face, count = move[0], amount[move[1:]]
+            if turns and turns[-1][0] == face:
+                count = (turns.pop()[1] + count) % 4
+            if count:
+                turns.append((face, count))
+    solution = [face + suffix[count] for face, count in turns]
+    if apply_moves(state, solution) != SOLVED:
+        raise RuntimeError("Final solution failed replay on the original cube.")
+    return solution

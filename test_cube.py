@@ -7,7 +7,8 @@ from collections import Counter
 from pathlib import Path
 
 from cube import CORNERS, EDGES, MOVES, SOLVED, Cube, apply_moves, inverse, parse_moves, random_scramble, read_state
-from solver import PHASES, corner_classes, solve
+from facelets import read_faces
+from solver import PHASES, corner_classes, final_moves, solve
 
 
 def sticker_model(moves):
@@ -43,6 +44,44 @@ def sticker_model(moves):
 
 
 class CubeTests(unittest.TestCase):
+    def test_final_moves_across_phases(self):
+        for first in MOVES:
+            for second in MOVES:
+                if first[0] != second[0]:
+                    continue
+                undo = [inverse(second), inverse(first)]
+                state = sticker_model(undo)
+                answer = final_moves(state, [("a", [first]), ("b", [second])])
+                self.assertLessEqual(len(answer), 1)
+                self.assertEqual(sticker_model(undo + answer), SOLVED)
+        cascade = [("a", ["R", "U"]), ("b", ["U'", "R'"])]
+        self.assertEqual(final_moves(SOLVED, cascade), [])
+        state = sticker_model(["R"])
+        self.assertEqual(final_moves(state, solve(state)), ["R'"])
+
+    def test_physical_cube_example(self):
+        faces = "FLLFUUFUU LLDRRRRRR LBBFFDFFD RRBDDBDDB UUULLDLLD FFRUBBUBB"
+        state = read_faces(faces.lower())
+        self.assertEqual(state, sticker_model(["F", "R", "U2"]))
+        output = subprocess.check_output(
+            [sys.executable, str(Path(__file__).with_name("solve_cube.py")), "solve-faces", faces],
+            text=True)
+        self.assertIn("Solution (3 moves): U2 R' F'", output)
+        self.assertIn("Replay: solved", output)
+
+    def test_invalid_stickers(self):
+        solved = "".join(f * 9 for f in "URFDLB")
+        self.assertEqual(read_faces(solved), SOLVED)
+        for pair in ((4, 13), (9, 20), (7, 19)):
+            # Swap two centers, mirror a corner, or flip one edge.
+            a, b = pair
+            stickers = list(solved)
+            stickers[a], stickers[b] = stickers[b], stickers[a]
+            with self.assertRaises(ValueError):
+                read_faces("".join(stickers))
+        with self.assertRaises(ValueError):
+            read_faces(solved[:-1])
+
     def test_moves_against_geometric_stickers(self):
         for move in MOVES:
             with self.subTest(move=move):
